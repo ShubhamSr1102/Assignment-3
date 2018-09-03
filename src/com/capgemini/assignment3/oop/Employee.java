@@ -11,7 +11,7 @@ public class Employee {
 	private double medical;
 	private double netSalary;
 
-	Employee() {
+	public Employee() {
 
 	}
 
@@ -28,6 +28,78 @@ public class Employee {
 		grossSalary = employeeHRA + basicSalary + medical;
 		netSalary = grossSalary - (employeePF + PT);
 		return netSalary;
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+	public double getEmployeeHRA() {
+		return employeeHRA;
+	}
+
+	public void setEmployeeHRA(double employeeHRA) {
+		this.employeeHRA = employeeHRA;
+	}
+
+	public double getEmployeePF() {
+		return employeePF;
+	}
+
+	public void setEmployeePF(double employeePF) {
+		this.employeePF = employeePF;
+	}
+
+	public static double getPT() {
+		return PT;
+	}
+
+	public static void setPT(double pT) {
+		PT = pT;
+	}
+
+	public double getBasicSalary() {
+		return basicSalary;
+	}
+
+	public void setBasicSalary(double basicSalary) {
+		this.basicSalary = basicSalary;
+	}
+
+	public double getGrossSalary() {
+		return grossSalary;
+	}
+
+	public void setGrossSalary(double grossSalary) {
+		this.grossSalary = grossSalary;
+	}
+
+	public double getMedical() {
+		return medical;
+	}
+
+	public void setMedical(double medical) {
+		this.medical = medical;
+	}
+
+	public double getNetSalary() {
+		return netSalary;
+	}
+
+	public void setNetSalary(double netSalary) {
+		this.netSalary = netSalary;
 	}
 
 	public void displayEmployeeInformation() {
